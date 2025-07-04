@@ -32,12 +32,7 @@ cd anatomical-landmark-classification-endoscopy
 ### 2. Install Requirements
 Each model folder contains its own requirements.txt:
 
-bash
-Copy
-Edit
-cd anat_convnext
-pip install -r requirements.txt
-Repeat similarly for other subfolders.
+
 
 ### 3. Inference & Training
 For ConvNeXt:
@@ -62,12 +57,12 @@ Copy
 Edit
 cd anat_yolo_split
 # Usage depends on the YOLO variant
-📦 Dataset
+### 📦 Dataset
 The models are trained and tested on labeled endoscopic frames containing anatomical landmarks.
 
 Supports frame-based datasets (image folders with CSV annotations) and video-to-frame pipelines.
 
-📈 Metrics Logged
+### 📈 Metrics Logged
 Accuracy
 
 Precision, Recall, F1 Score
@@ -76,13 +71,13 @@ Confusion Matrix
 
 mAP@50 (YOLO models)
 
-🧪 Sample Output
+### 🧪 Sample Output
 You can find example predictions and visualizations inside each model folder under results/.
 
-📄 License
+### 📄 License
 MIT License. See LICENSE file for more details.
 
-👨‍💻 Author
+### 👨‍💻 Author
 Lakshminarayanan M – Biomedical Deep Learning Researcher
 
 📬 lakshminarayanan678
@@ -100,12 +95,4 @@ Edit
 
 ---
 
-### 🔧 How to Add
 
-Save this content as `README.md` in your repo root.
-
-Then run:
-```bash
-git add README.md
-git commit -m "Added project README with structure and instructions"
-git push origin main
