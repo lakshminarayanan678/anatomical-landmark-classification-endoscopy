@@ -1,0 +1,174 @@
+_wandb:
+    value:
+        cli_version: 0.19.11
+        m: []
+        python_version: 3.8.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 51
+                - 53
+                - 55
+                - 63
+            "2":
+                - 1
+                - 5
+                - 41
+                - 51
+                - 53
+                - 55
+                - 63
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.8.10
+            "5": 0.19.11
+            "8":
+                - 5
+            "12": 0.19.11
+            "13": linux-x86_64
+aa:
+    value: rand-m9-mstd0.5-inc1
+auto_resume:
+    value: true
+batch_size:
+    value: 64
+clip_grad:
+    value: null
+color_jitter:
+    value: 0.4
+crop_pct:
+    value: 0.875
+cutmix:
+    value: 1
+cutmix_minmax:
+    value: null
+data_path:
+    value: /home/endodl/PHASE-1/mln/anatomical/data
+data_set:
+    value: IMNET
+device:
+    value: cuda
+disable_eval:
+    value: false
+dist_eval:
+    value: true
+dist_on_itp:
+    value: false
+dist_url:
+    value: env://
+distributed:
+    value: false
+drop_path:
+    value: 0.2
+enable_wandb:
+    value: true
+epochs:
+    value: 300
+eval:
+    value: true
+eval_data_path:
+    value: /home/endodl/PHASE-1/mln/data
+finetune:
+    value: ""
+head_init_scale:
+    value: 1
+imagenet_default_mean_and_std:
+    value: true
+input_size:
+    value: 224
+layer_decay:
+    value: 1
+layer_scale_init_value:
+    value: 1e-06
+local_rank:
+    value: -1
+log_dir:
+    value: null
+lr:
+    value: 0.004
+min_lr:
+    value: 1e-06
+mixup:
+    value: 0.8
+mixup_mode:
+    value: batch
+mixup_prob:
+    value: 1
+mixup_switch_prob:
+    value: 0.5
+model:
+    value: convnext_tiny
+model_ema:
+    value: false
+model_ema_decay:
+    value: 0.9999
+model_ema_eval:
+    value: false
+model_ema_force_cpu:
+    value: false
+model_key:
+    value: model|module
+model_prefix:
+    value: ""
+momentum:
+    value: 0.9
+nb_classes:
+    value: 1000
+num_workers:
+    value: 10
+opt:
+    value: adamw
+opt_betas:
+    value: null
+opt_eps:
+    value: 1e-08
+output_dir:
+    value: ""
+pin_mem:
+    value: true
+project:
+    value: convnext
+recount:
+    value: 1
+remode:
+    value: pixel
+reprob:
+    value: 0.25
+resplit:
+    value: false
+resume:
+    value: /home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_convnext/ConvNeXt/OURS/checkpoint-best.pth
+save_ckpt:
+    value: true
+save_ckpt_freq:
+    value: 1
+save_ckpt_num:
+    value: 3
+seed:
+    value: 0
+smoothing:
+    value: 0.1
+start_epoch:
+    value: 0
+train_interpolation:
+    value: bicubic
+update_freq:
+    value: 1
+use_amp:
+    value: false
+wandb_ckpt:
+    value: true
+warmup_epochs:
+    value: 20
+warmup_steps:
+    value: -1
+weight_decay:
+    value: 0.05
+weight_decay_end:
+    value: null
+world_size:
+    value: 1
