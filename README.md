@@ -24,11 +24,12 @@ anatomical_stomach/
 ## How to Run
 
 ### 1. Clone the Repository
-```bash
+```
 git clone https://github.com/lakshminarayanan678/anatomical-landmark-classification-endoscopy.git
 cd anatomical-landmark-classification-endoscopy
+```
 
-2. Install Requirements
+### 2. Install Requirements
 Each model folder contains its own requirements.txt:
 
 bash
@@ -38,7 +39,7 @@ cd anat_convnext
 pip install -r requirements.txt
 Repeat similarly for other subfolders.
 
-3. Inference & Training
+### 3. Inference & Training
 For ConvNeXt:
 
 bash
