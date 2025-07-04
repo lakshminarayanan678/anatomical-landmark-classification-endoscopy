@@ -1,0 +1,17 @@
+{"time":"2025-06-09T12:09:31.775572094+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/wandb/run-20250609_120931-grbf9xem/logs/debug-core.log"}
+{"time":"2025-06-09T12:09:32.147229784+05:30","level":"INFO","msg":"created new stream","id":"grbf9xem"}
+{"time":"2025-06-09T12:09:32.147291864+05:30","level":"INFO","msg":"stream: started","id":"grbf9xem"}
+{"time":"2025-06-09T12:09:32.147407408+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:09:32.14748653+05:30","level":"INFO","msg":"sender: started","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:09:32.147555084+05:30","level":"INFO","msg":"handler: started","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:09:32.515381604+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-09T12:09:34.455366498+05:30","level":"WARN","msg":"sender: sendUseArtifact: job builder disabled, skipping"}
+{"time":"2025-06-09T12:44:38.388636662+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-09T12:44:38.389390341+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-09T12:44:39.389792615+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.39340479,"progress":"23.0KB/23.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.393347051,"progress":"27B/27B"},{"desc":"uploading config.yaml","runtime_seconds":0.128530709,"progress":"524B/524B"}],"total_operations":3}}
+{"time":"2025-06-09T12:44:39.599199004+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-09T12:44:39.956483919+05:30","level":"INFO","msg":"stream: closing","id":"grbf9xem"}
+{"time":"2025-06-09T12:44:39.956517576+05:30","level":"INFO","msg":"handler: closed","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:44:39.956536613+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:44:39.956570169+05:30","level":"INFO","msg":"sender: closed","stream_id":"grbf9xem"}
+{"time":"2025-06-09T12:44:39.956695509+05:30","level":"INFO","msg":"stream: closed","id":"grbf9xem"}

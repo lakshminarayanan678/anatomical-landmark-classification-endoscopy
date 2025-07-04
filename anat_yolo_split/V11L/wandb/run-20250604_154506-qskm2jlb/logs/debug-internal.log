@@ -1,0 +1,19 @@
+{"time":"2025-06-04T15:45:06.281361851+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/V11L/wandb/run-20250604_154506-qskm2jlb/logs/debug-core.log"}
+{"time":"2025-06-04T15:45:07.066466747+05:30","level":"INFO","msg":"created new stream","id":"qskm2jlb"}
+{"time":"2025-06-04T15:45:07.066509809+05:30","level":"INFO","msg":"stream: started","id":"qskm2jlb"}
+{"time":"2025-06-04T15:45:07.06657312+05:30","level":"INFO","msg":"handler: started","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T15:45:07.066585996+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T15:45:07.066599525+05:30","level":"INFO","msg":"sender: started","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T15:45:07.509882087+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T15:45:10.623670719+05:30","level":"WARN","msg":"sender: sendUseArtifact: job builder disabled, skipping"}
+{"time":"2025-06-04T16:06:45.358526213+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/lakshminarayanan-/capsule_vision_challenge_2024/qskm2jlb/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: read udp 127.0.0.1:39367->127.0.0.53:53: i/o timeout"}
+{"time":"2025-06-04T16:06:57.677385764+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/lakshminarayanan-/capsule_vision_challenge_2024/qskm2jlb/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: read udp 127.0.0.1:49934->127.0.0.53:53: i/o timeout"}
+{"time":"2025-06-04T16:16:58.07340315+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T16:16:58.073535772+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T16:16:59.038917612+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact yolo11L_cls_model","runtime_seconds":1.009006438},{"desc":"uploading output.log","runtime_seconds":0.285450788,"progress":"23.2KB/23.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.285425884,"progress":"27B/27B"}],"total_operations":3}}
+{"time":"2025-06-04T16:17:08.937306402+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T16:17:13.51848021+05:30","level":"INFO","msg":"stream: closing","id":"qskm2jlb"}
+{"time":"2025-06-04T16:17:13.518513916+05:30","level":"INFO","msg":"handler: closed","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T16:17:13.518530486+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T16:17:13.518549556+05:30","level":"INFO","msg":"sender: closed","stream_id":"qskm2jlb"}
+{"time":"2025-06-04T16:17:13.518635918+05:30","level":"INFO","msg":"stream: closed","id":"qskm2jlb"}

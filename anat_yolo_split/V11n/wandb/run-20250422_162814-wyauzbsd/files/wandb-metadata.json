@@ -1,0 +1,162 @@
+{
+    "os": "Linux-5.15.0-136-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2025-04-22T10:58:15.163338",
+    "startedAt": "2025-04-22T10:58:14.087268",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "htic",
+    "username": "endodl",
+    "executable": "/bin/python3",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2.8940000000000015,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 1.585,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 1.217,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.6315612792969,
+            "used": 423.4092216491699
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 31.199481964111328
+    }
+}

@@ -1,0 +1,303 @@
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l-cls.pt to 'yolo11l-cls.pt'...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 27.2M/27.2M [00:08<00:00, 3.33MB/s]
+New https://pypi.org/project/ultralytics/8.3.149 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.3.62 🚀 Python-3.8.10 torch-2.4.1+cu118 CUDA:0 (NVIDIA GeForce RTX 3090, 24126MiB)
+[34m[1mengine/trainer: [0mtask=classify, mode=train, model=yolo11l-cls.pt, data=/home/endodl/PHASE-1/mln/anatomical/data, epochs=50, time=None, patience=100, batch=16, imgsz=224, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=True, opset=None, workspace=None, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, copy_paste_mode=flip, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/classify/train
+[34m[1mtrain:[0m /home/endodl/PHASE-1/mln/anatomical/data/train... found 10564 images in 5 classes ✅
+[34m[1mval:[0m /home/endodl/PHASE-1/mln/anatomical/data/val... found 2263 images in 5 classes ✅
+[34m[1mtest:[0m /home/endodl/PHASE-1/mln/anatomical/data/test... found 2268 images in 5 classes ✅
+Overriding model.yaml nc=80 with nc=5
+
+                   from  n    params  module                                       arguments
+  0                  -1  1      1856  ultralytics.nn.modules.conv.Conv             [3, 64, 3, 2]
+  1                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  2                  -1  2    173824  ultralytics.nn.modules.block.C3k2            [128, 256, 2, True, 0.25]
+  3                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+  4                  -1  2    691712  ultralytics.nn.modules.block.C3k2            [256, 512, 2, True, 0.25]
+  5                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]
+  6                  -1  2   2234368  ultralytics.nn.modules.block.C3k2            [512, 512, 2, True]
+  7                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]
+  8                  -1  2   2234368  ultralytics.nn.modules.block.C3k2            [512, 512, 2, True]
+  9                  -1  2   1455616  ultralytics.nn.modules.block.C2PSA           [512, 512, 2]
+ 10                  -1  1    664325  ultralytics.nn.modules.head.Classify         [512, 5]
+YOLO11l-cls summary: 309 layers, 12,841,029 parameters, 12,841,029 gradients, 49.8 GFLOPs
+Transferred 492/494 items from pretrained weights
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt to 'yolo11n.pt'...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5.35M/5.35M [00:01<00:00, 5.53MB/s]
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /home/endodl/PHASE-1/mln/anatomical/data/train... 10564 images, 0 corrupt: 100%|██████████| 10564/10564 [00:05<00:00, 1831.65it/s][0m
+[34m[1mtrain: [0mNew cache created: /home/endodl/PHASE-1/mln/anatomical/data/train.cache
+[34m[1mval: [0mScanning /home/endodl/PHASE-1/mln/anatomical/data/val... 2263 images, 0 corrupt: 100%|██████████| 2263/2263 [00:00<00:00, 4383.28it/s][0m
+[34m[1mval: [0mNew cache created: /home/endodl/PHASE-1/mln/anatomical/data/val.cache
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 82 weight(decay=0.0), 83 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 224 train, 224 val
+Using 8 dataloader workers
+Logging results to [1mruns/classify/train[0m
+Starting training for 50 epochs...
+
+      Epoch    GPU_mem       loss  Instances       Size
+       1/50      1.17G     0.4419          4        224: 100%|██████████| 661/661 [00:39<00:00, 16.58it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:05<00:00, 12.58it/s]
+                   all      0.956          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       2/50      1.19G     0.2169          4        224: 100%|██████████| 661/661 [00:33<00:00, 19.64it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:05<00:00, 13.26it/s]
+                   all      0.967          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       3/50      1.23G     0.2312          4        224: 100%|██████████| 661/661 [00:33<00:00, 19.99it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:05<00:00, 13.58it/s]
+                   all      0.958          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       4/50      1.19G     0.2029          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.76it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 14.78it/s]
+                   all      0.977          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       5/50      1.23G     0.1754          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.82it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.62it/s]
+                   all      0.966          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       6/50      1.22G     0.1554          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.78it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.54it/s]
+                   all      0.976          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       7/50      1.23G     0.1345          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.96it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.51it/s]
+                   all       0.98          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       8/50      1.22G     0.1292          4        224: 100%|██████████| 661/661 [00:31<00:00, 21.04it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.99it/s]
+                   all      0.979          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+       9/50      1.23G     0.1233          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.92it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.67it/s]
+                   all      0.967          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      10/50      1.22G     0.1092          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.90it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.59it/s]
+                   all      0.984          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      11/50      1.19G     0.1147          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.98it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.26it/s]
+                   all      0.977          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      12/50      1.19G     0.1052          4        224: 100%|██████████| 661/661 [00:31<00:00, 21.00it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.09it/s]
+                   all      0.979          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      13/50      1.23G    0.09897          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.85it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.41it/s]
+                   all       0.98          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      14/50      1.21G    0.09904          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.93it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.84it/s]
+                   all      0.977          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      15/50      1.19G    0.09754          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.94it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.31it/s]
+                   all      0.981          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      16/50      1.19G    0.09731          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.90it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.42it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      17/50      1.23G    0.09796          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.84it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.60it/s]
+                   all      0.981          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      18/50      1.17G    0.09319          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.82it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.43it/s]
+                   all      0.982          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      19/50      1.23G    0.08364          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.87it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.71it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      20/50      1.19G    0.09028          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.79it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.35it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      21/50      1.23G    0.07979          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.85it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.47it/s]
+                   all      0.984          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      22/50      1.22G    0.07918          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.80it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.08it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      23/50      1.23G    0.07993          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.76it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.15it/s]
+                   all      0.984          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      24/50      1.22G    0.07364          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.87it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.37it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      25/50      1.23G    0.07383          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.70it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.44it/s]
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      26/50      1.22G    0.06368          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.76it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.67it/s]
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      27/50      1.19G    0.06878          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.89it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.80it/s]
+                   all      0.982          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      28/50      1.19G    0.06844          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.72it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.53it/s]
+                   all      0.983          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      29/50      1.23G    0.05711          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.81it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.40it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      30/50      1.21G    0.06153          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.77it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.51it/s]
+                   all      0.984          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      31/50      1.19G    0.06077          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.75it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.20it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      32/50      1.19G    0.06247          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.76it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.13it/s]
+                   all      0.985          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      33/50      1.23G    0.05583          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.78it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.29it/s]
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      34/50      1.17G    0.04939          4        224: 100%|██████████| 661/661 [00:32<00:00, 20.23it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.06it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      35/50      1.23G    0.04732          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.94it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.87it/s]
+                   all      0.988          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      36/50      1.19G    0.05137          4        224: 100%|██████████| 661/661 [00:31<00:00, 21.04it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.38it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      37/50      1.23G    0.04442          4        224: 100%|██████████| 661/661 [00:31<00:00, 20.66it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 14.24it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      38/50      1.22G     0.0395          4        224: 100%|██████████| 661/661 [00:32<00:00, 20.41it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.07it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      39/50      1.23G    0.04139          4        224: 100%|██████████| 661/661 [00:32<00:00, 20.36it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.49it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      40/50      1.22G    0.03912          4        224: 100%|██████████| 661/661 [00:32<00:00, 20.51it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.04it/s]
+                   all      0.988          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      41/50      1.23G    0.04397          4        224: 100%|██████████| 661/661 [00:37<00:00, 17.77it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.42it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      42/50      1.22G    0.03545          4        224: 100%|██████████| 661/661 [00:35<00:00, 18.76it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.38it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      43/50      1.19G    0.03264          4        224: 100%|██████████| 661/661 [00:34<00:00, 19.40it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.26it/s]
+                   all      0.989          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      44/50      1.19G    0.04127          4        224: 100%|██████████| 661/661 [00:31<00:00, 21.01it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.80it/s]
+                   all      0.988          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      45/50      1.23G     0.0266          4        224: 100%|██████████| 661/661 [00:30<00:00, 21.52it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.62it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      46/50      1.21G    0.02724          4        224: 100%|██████████| 661/661 [00:28<00:00, 22.86it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.19it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      47/50      1.19G    0.02574          4        224: 100%|██████████| 661/661 [00:28<00:00, 23.14it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.30it/s]
+                   all      0.986          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      48/50       1.2G    0.02362          4        224: 100%|██████████| 661/661 [00:28<00:00, 23.16it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.13it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      49/50      1.23G    0.02774          4        224: 100%|██████████| 661/661 [00:30<00:00, 21.47it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.77it/s]
+                   all      0.987          1
+
+      Epoch    GPU_mem       loss  Instances       Size
+      50/50      1.17G    0.02134          4        224: 100%|██████████| 661/661 [00:28<00:00, 23.10it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 15.65it/s]
+                   all      0.986          1
+
+50 epochs completed in 0.518 hours.
+Optimizer stripped from runs/classify/train/weights/last.pt, 25.9MB
+Optimizer stripped from runs/classify/train/weights/best.pt, 25.9MB
+
+Validating runs/classify/train/weights/best.pt...
+Ultralytics 8.3.62 🚀 Python-3.8.10 torch-2.4.1+cu118 CUDA:0 (NVIDIA GeForce RTX 3090, 24126MiB)
+YOLO11l-cls summary (fused): 227 layers, 12,824,837 parameters, 0 gradients, 49.3 GFLOPs
+[34m[1mtrain:[0m /home/endodl/PHASE-1/mln/anatomical/data/train... found 10564 images in 5 classes ✅
+[34m[1mval:[0m /home/endodl/PHASE-1/mln/anatomical/data/val... found 2263 images in 5 classes ✅
+[34m[1mtest:[0m /home/endodl/PHASE-1/mln/anatomical/data/test... found 2268 images in 5 classes ✅
+               classes   top1_acc   top5_acc: 100%|██████████| 71/71 [00:04<00:00, 16.10it/s]
+                   all      0.989          1
+Speed: 0.1ms preprocess, 0.4ms inference, 0.0ms loss, 0.0ms postprocess per image
+Results saved to [1mruns/classify/train[0m

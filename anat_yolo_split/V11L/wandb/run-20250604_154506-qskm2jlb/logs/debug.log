@@ -1,0 +1,29 @@
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_setup.py:_flush():70] Configure stats pid to 734146
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_setup.py:_flush():70] Loading settings from /home/endodl/.config/wandb/settings
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_setup.py:_flush():70] Loading settings from /home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/V11L/wandb/settings
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/V11L/wandb/run-20250604_154506-qskm2jlb/logs/debug.log
+2025-06-04 15:45:06,258 INFO    MainThread:734146 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /home/endodl/PHASE-1/mln/anatomical/anatomical_stomach/anat_yolo_split/V11L/wandb/run-20250604_154506-qskm2jlb/logs/debug-internal.log
+2025-06-04 15:45:06,259 INFO    MainThread:734146 [wandb_init.py:init():852] calling init triggers
+2025-06-04 15:45:06,259 INFO    MainThread:734146 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-06-04 15:45:06,259 INFO    MainThread:734146 [wandb_init.py:init():893] starting backend
+2025-06-04 15:45:06,259 INFO    MainThread:734146 [wandb_init.py:init():897] sending inform_init request
+2025-06-04 15:45:06,279 INFO    MainThread:734146 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-04 15:45:06,279 INFO    MainThread:734146 [wandb_init.py:init():907] backend started and connected
+2025-06-04 15:45:06,280 INFO    MainThread:734146 [wandb_init.py:init():1005] updated telemetry
+2025-06-04 15:45:06,293 INFO    MainThread:734146 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-04 15:45:07,464 INFO    MainThread:734146 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-04 15:45:07,686 INFO    MainThread:734146 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-04 15:45:07,687 INFO    MainThread:734146 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-04 15:45:07,687 INFO    MainThread:734146 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-04 15:45:07,687 INFO    MainThread:734146 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-04 15:45:07,688 INFO    MainThread:734146 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-04 16:16:58,032 INFO    MainThread:734146 [wandb_run.py:_finish():2321] finishing run lakshminarayanan-/capsule_vision_challenge_2024/qskm2jlb
+2025-06-04 16:16:58,033 INFO    MainThread:734146 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-06-04 16:16:58,034 INFO    MainThread:734146 [wandb_run.py:_restore():2520] restore
+2025-06-04 16:16:58,034 INFO    MainThread:734146 [wandb_run.py:_restore():2526] restore done
+2025-06-04 16:17:13,516 INFO    MainThread:734146 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-06-04 16:17:13,516 INFO    MainThread:734146 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-06-04 16:17:13,517 INFO    MainThread:734146 [wandb_run.py:_footer_sync_info():4149] logging synced files
