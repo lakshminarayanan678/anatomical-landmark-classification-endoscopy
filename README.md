@@ -22,3 +22,89 @@ anatomical_stomach/
 ---
 
 ## How to Run
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/lakshminarayanan678/anatomical-landmark-classification-endoscopy.git
+cd anatomical-landmark-classification-endoscopy
+
+2. Install Requirements
+Each model folder contains its own requirements.txt:
+
+bash
+Copy
+Edit
+cd anat_convnext
+pip install -r requirements.txt
+Repeat similarly for other subfolders.
+
+3. Inference & Training
+For ConvNeXt:
+
+bash
+Copy
+Edit
+cd anat_convnext/ConvNeXt
+python train_model.py      # Train the model
+python val_scores.py       # Evaluate performance
+For DINO-ViT:
+
+bash
+Copy
+Edit
+cd anat_dinovit
+python train_model.py
+For YOLO:
+
+bash
+Copy
+Edit
+cd anat_yolo_split
+# Usage depends on the YOLO variant
+📦 Dataset
+The models are trained and tested on labeled endoscopic frames containing anatomical landmarks.
+
+Supports frame-based datasets (image folders with CSV annotations) and video-to-frame pipelines.
+
+📈 Metrics Logged
+Accuracy
+
+Precision, Recall, F1 Score
+
+Confusion Matrix
+
+mAP@50 (YOLO models)
+
+🧪 Sample Output
+You can find example predictions and visualizations inside each model folder under results/.
+
+📄 License
+MIT License. See LICENSE file for more details.
+
+👨‍💻 Author
+Lakshminarayanan M – Biomedical Deep Learning Researcher
+
+📬 lakshminarayanan678
+
+📌 To-Do
+ Add pretrained model weights via GitHub Releases or LFS
+
+ Integrate real-time video classification
+
+ Upload full benchmark results across all models
+
+yaml
+Copy
+Edit
+
+---
+
+### 🔧 How to Add
+
+Save this content as `README.md` in your repo root.
+
+Then run:
+```bash
+git add README.md
+git commit -m "Added project README with structure and instructions"
+git push origin main
